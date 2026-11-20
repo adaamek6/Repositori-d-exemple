@@ -1,0 +1,13 @@
+
+name: Workflow de prova
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  prova:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mostrar missatge
+        run: echo "Hola! El workflow funciona correctament."
